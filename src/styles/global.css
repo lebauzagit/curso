@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html, body{
+    @apply bg-neutral-300 dark:bg-neutral-800 box-border m-0 w-full h-full border-0;
+}
+
+h1{
+    @apply text-3xl text-neutral-800 dark:text-neutral-300;
+}
+
+.nav-link {
+    @apply no-underline px-2 py-4 text-neutral-800;
+
+    @media (prefers-color-scheme: dark) {
+        @apply text-white;
+    }
+}
+
+.nav-link[aria-current="page"] {
+    @apply hidden;
+}
